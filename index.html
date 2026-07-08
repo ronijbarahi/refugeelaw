@@ -1,0 +1,1968 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Pokharel Law — Refugee &amp; Immigration Lawyers in Toronto, Ontario</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #0F172A;
+    --navy-700: #1E293B;
+    --blue: #DC2626;
+    --blue-700: #991B1B;
+    --cyan: #F87171;
+    --emerald: #10B981;
+    --amber: #F59E0B;
+    --bg: #FFFFFF;
+    --bg-soft: #F8FAFC;
+    --bg-soft-2: #F1F5F9;
+    --border: #E2E8F0;
+    --border-soft: #EEF2F7;
+    --text: #1E293B;
+    --muted: #64748B;
+    --muted-2: #94A3B8;
+    --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.04), 0 1px 3px rgba(15, 23, 42, 0.06);
+    --shadow-md: 0 8px 24px -8px rgba(15, 23, 42, 0.10), 0 2px 6px rgba(15, 23, 42, 0.04);
+    --shadow-lg: 0 30px 60px -20px rgba(15, 23, 42, 0.18), 0 10px 20px -10px rgba(15, 23, 42, 0.08);
+    --radius-sm: 10px;
+    --radius: 16px;
+    --radius-lg: 22px;
+    --radius-xl: 28px;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    line-height: 1.6;
+    font-size: 16px;
+  }
+  h1, h2, h3, h4, h5 {
+    font-family: 'Manrope', system-ui, sans-serif;
+    color: var(--navy);
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    font-weight: 700;
+    margin: 0;
+  }
+  p { margin: 0; color: var(--muted); }
+  a { color: inherit; text-decoration: none; }
+  .container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+
+  /* ===== NAV ===== */
+  .nav {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: rgba(255,255,255,0.82);
+    backdrop-filter: saturate(180%) blur(14px);
+    -webkit-backdrop-filter: saturate(180%) blur(14px);
+    border-bottom: 1px solid transparent;
+    transition: border-color .2s ease, box-shadow .2s ease;
+  }
+  .nav.scrolled { border-bottom-color: var(--border-soft); }
+  .nav-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 76px;
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    color: var(--navy);
+    font-size: 17px;
+    letter-spacing: -0.01em;
+  }
+  .brand-mark {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, var(--navy) 0%, #DC2626 100%);
+    display: grid;
+    place-items: center;
+    position: relative;
+  }
+  .brand-mark::after {
+    content: "";
+    position: absolute;
+    inset: 8px;
+    border-radius: 6px;
+    background:
+      radial-gradient(circle at 50% 42%, #fff 0 3px, transparent 3.5px),
+      linear-gradient(to bottom, transparent 60%, #fff 60% 64%, transparent 64%);
+    opacity: .95;
+  }
+  .nav-links {
+    display: flex;
+    gap: 36px;
+    align-items: center;
+  }
+  .nav-links a {
+    font-size: 14.5px;
+    color: var(--navy-700);
+    font-weight: 500;
+  }
+  .nav-links a:hover { color: var(--blue); }
+  .nav-cta-group { display: flex; gap: 10px; align-items: center; }
+  .lang-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 12px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    font-size: 13px;
+    color: var(--navy-700);
+    font-weight: 500;
+    background: white;
+  }
+  .lang-pill .dot {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: var(--emerald);
+  }
+
+  /* ===== BUTTONS ===== */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 24px;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 14.5px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: transform .15s ease, box-shadow .2s ease, background .2s ease, border-color .2s ease, color .2s ease;
+    font-family: inherit;
+    white-space: nowrap;
+  }
+  .btn-primary {
+    background: var(--blue);
+    color: white;
+    box-shadow: 0 10px 22px -8px rgba(220,38,38,0.45);
+  }
+  .btn-primary:hover {
+    background: var(--blue-700);
+    transform: translateY(-1px);
+    box-shadow: 0 18px 32px -10px rgba(220,38,38,0.55);
+  }
+  .btn-secondary {
+    background: white;
+    color: var(--navy);
+    border-color: var(--border);
+  }
+  .btn-secondary:hover {
+    border-color: #cbd5e1;
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-sm);
+  }
+  .btn-dark {
+    background: var(--navy);
+    color: white;
+  }
+  .btn-dark:hover { background: #111c36; transform: translateY(-1px); }
+  .btn .arrow { transition: transform .2s ease; }
+  .btn:hover .arrow { transform: translateX(3px); }
+  .btn-big {
+    padding: 18px 32px;
+    font-size: 16px;
+    border-radius: 14px;
+  }
+
+  /* ===== HERO ===== */
+  .hero {
+    padding: 60px 0 90px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: -260px; right: -140px;
+    width: 720px; height: 720px;
+    background: radial-gradient(circle, rgba(248,113,113,0.25), transparent 60%);
+    filter: blur(20px);
+    pointer-events: none;
+  }
+  .hero::after {
+    content: "";
+    position: absolute;
+    bottom: -240px; left: -120px;
+    width: 540px; height: 540px;
+    background: radial-gradient(circle, rgba(220,38,38,0.12), transparent 65%);
+    filter: blur(20px);
+    pointer-events: none;
+  }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1.05fr 1fr;
+    gap: 60px;
+    align-items: center;
+    position: relative;
+  }
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 7px 14px 7px 8px;
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--navy-700);
+    box-shadow: var(--shadow-sm);
+  }
+  .eyebrow-tag {
+    background: #ECFDF5;
+    color: #047857;
+    padding: 3px 9px;
+    border-radius: 999px;
+    font-size: 11.5px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+  }
+  .hero h1 {
+    font-size: clamp(40px, 5.4vw, 68px);
+    margin-top: 22px;
+    line-height: 1.02;
+    letter-spacing: -0.035em;
+    font-weight: 800;
+  }
+  .hero h1 .hl {
+    background: linear-gradient(120deg, #DC2626 0%, #F87171 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .hero-sub {
+    margin-top: 24px;
+    font-size: 19px;
+    color: var(--muted);
+    max-width: 520px;
+    line-height: 1.55;
+  }
+
+  .hero-stats {
+    margin-top: 36px;
+    display: flex;
+    gap: 28px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .stat {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .stat .num {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    font-size: 26px;
+    color: var(--navy);
+    letter-spacing: -0.02em;
+  }
+  .stat .lab {
+    font-size: 13px;
+    color: var(--muted);
+  }
+  .stat-divider {
+    width: 1px;
+    height: 36px;
+    background: var(--border);
+  }
+
+  /* GOOGLE-style review badge */
+  .review-badge {
+    margin-top: 32px;
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    padding: 12px 18px;
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    box-shadow: var(--shadow-sm);
+  }
+  .google-logo {
+    display: inline-flex; align-items: center; gap: 0;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: -0.01em;
+  }
+  .google-logo span:nth-child(1){color:#4285F4}
+  .google-logo span:nth-child(2){color:#EA4335}
+  .google-logo span:nth-child(3){color:#FBBC05}
+  .google-logo span:nth-child(4){color:#4285F4}
+  .google-logo span:nth-child(5){color:#34A853}
+  .google-logo span:nth-child(6){color:#EA4335}
+  .review-badge .score {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    color: var(--navy);
+  }
+  .stars-row { color: var(--amber); display: flex; gap: 1px; }
+  .review-badge .count {
+    font-size: 13px;
+    color: var(--muted);
+  }
+
+  /* ===== INTAKE QUIZ CARD ===== */
+  .quiz-card {
+    background: white;
+    border-radius: 26px;
+    box-shadow: 0 30px 70px -20px rgba(15,23,42,0.22), 0 10px 30px -12px rgba(15,23,42,0.1);
+    border: 1px solid var(--border-soft);
+    overflow: hidden;
+    position: relative;
+  }
+  .quiz-head {
+    padding: 22px 28px 18px;
+    border-bottom: 1px solid var(--border-soft);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  }
+  .quiz-head .title {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    color: var(--navy);
+    font-size: 15px;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .quiz-head .title .dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--emerald);
+    box-shadow: 0 0 0 0 rgba(16,185,129,0.6);
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(16,185,129,0.6); }
+    70% { box-shadow: 0 0 0 9px rgba(16,185,129,0); }
+    100% { box-shadow: 0 0 0 0 rgba(16,185,129,0); }
+  }
+  .step-pill {
+    font-size: 12.5px;
+    color: var(--muted);
+    font-weight: 500;
+    padding: 5px 10px;
+    background: var(--bg-soft);
+    border-radius: 999px;
+  }
+  .quiz-progress {
+    height: 4px;
+    background: var(--border-soft);
+    position: relative;
+  }
+  .quiz-progress .bar {
+    position: absolute;
+    inset: 0 66% 0 0;
+    background: linear-gradient(to right, #DC2626, #F87171);
+    border-radius: 999px;
+  }
+  .quiz-body {
+    padding: 28px 28px 24px;
+  }
+  .quiz-q-label {
+    font-size: 12.5px;
+    color: var(--blue);
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  .quiz-q {
+    font-family: 'Manrope', sans-serif;
+    font-size: 22px;
+    color: var(--navy);
+    font-weight: 700;
+    margin-top: 8px;
+    letter-spacing: -0.01em;
+    line-height: 1.25;
+  }
+  .quiz-options {
+    margin-top: 22px;
+    display: grid;
+    gap: 10px;
+  }
+  .quiz-option {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 14px 16px;
+    border: 1.5px solid var(--border-soft);
+    border-radius: 14px;
+    cursor: pointer;
+    transition: border-color .2s, background .2s, transform .2s;
+    background: white;
+  }
+  .quiz-option:hover {
+    border-color: rgba(220,38,38,0.4);
+    background: #FFF7F7;
+  }
+  .quiz-option.selected {
+    border-color: var(--blue);
+    background: #FEF2F2;
+    box-shadow: 0 0 0 4px rgba(220,38,38,0.08);
+  }
+  .quiz-option .icon-bubble {
+    width: 38px; height: 38px;
+    border-radius: 10px;
+    background: var(--bg-soft);
+    display: grid; place-items: center;
+    color: var(--blue);
+    flex-shrink: 0;
+  }
+  .quiz-option.selected .icon-bubble {
+    background: #FEE2E2;
+  }
+  .quiz-option .label {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    color: var(--navy);
+    font-size: 14.5px;
+    flex: 1;
+  }
+  .quiz-option .check {
+    width: 20px; height: 20px;
+    border-radius: 50%;
+    border: 1.5px solid var(--border);
+    display: grid; place-items: center;
+    flex-shrink: 0;
+    transition: background .2s, border-color .2s;
+  }
+  .quiz-option.selected .check {
+    background: var(--blue);
+    border-color: var(--blue);
+    color: white;
+  }
+  .quiz-option:not(.selected) .check svg { opacity: 0; }
+  .quiz-foot {
+    padding: 16px 24px 22px;
+    background: var(--bg-soft);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 14px;
+    border-top: 1px solid var(--border-soft);
+  }
+  .quiz-meta {
+    font-size: 12.5px;
+    color: var(--muted);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .quiz-meta .lock {
+    width: 14px; height: 14px;
+    color: var(--muted-2);
+  }
+  .btn-next {
+    background: var(--navy);
+    color: white;
+    padding: 11px 18px;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 14px;
+    display: inline-flex; align-items: center; gap: 6px;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    transition: background .2s, transform .2s;
+  }
+  .btn-next:hover { background: #111c36; transform: translateY(-1px); }
+
+  /* float chip near quiz */
+  .float-chip {
+    position: absolute;
+    background: white;
+    padding: 10px 14px 10px 12px;
+    border-radius: 14px;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--border-soft);
+    display: flex; align-items: center; gap: 10px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--navy);
+  }
+  .float-chip .icon {
+    width: 30px; height: 30px; border-radius: 8px;
+    display: grid; place-items: center;
+  }
+  .float-chip .icon.green { background: #ECFDF5; color: var(--emerald); }
+  .float-chip .icon.blue  { background: #FEF2F2; color: var(--blue); }
+  .float-chip.fc1 { bottom: -16px; left: -32px; }
+  .float-chip.fc2 { top: 80px; right: -38px; }
+
+  /* ===== STRIP under hero ===== */
+  .strip {
+    border-top: 1px solid var(--border-soft);
+    border-bottom: 1px solid var(--border-soft);
+    background: var(--bg-soft);
+    padding: 26px 0;
+  }
+  .strip-inner {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .strip-label {
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted-2);
+    font-weight: 600;
+  }
+  .strip-items {
+    display: flex;
+    gap: 36px;
+    flex-wrap: wrap;
+    color: var(--navy-700);
+    font-weight: 500;
+    font-size: 14.5px;
+    font-family: 'Manrope', sans-serif;
+  }
+
+  /* ===== SECTIONS ===== */
+  section { padding: 110px 0; }
+  .section-head {
+    max-width: 760px;
+    margin: 0 auto 64px;
+    text-align: center;
+  }
+  .section-head.left {
+    margin: 0 0 56px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 40px;
+    flex-wrap: wrap;
+    max-width: none;
+  }
+  .section-head.left .copy { max-width: 580px; }
+  .section-eyebrow {
+    color: var(--blue);
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    display: inline-block;
+  }
+  .section-head h2 {
+    font-size: clamp(32px, 4vw, 48px);
+    letter-spacing: -0.03em;
+    line-height: 1.05;
+  }
+  .section-head p {
+    font-size: 17px;
+    margin-top: 18px;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+
+  /* HOW IT WORKS */
+  .how {
+    background: var(--bg-soft);
+  }
+  .steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    position: relative;
+  }
+  .step-card {
+    background: white;
+    border: 1px solid var(--border-soft);
+    border-radius: var(--radius-lg);
+    padding: 38px 32px;
+    position: relative;
+    transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+  }
+  .step-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+    border-color: rgba(220,38,38,0.2);
+  }
+  .step-index {
+    font-family: 'Manrope', sans-serif;
+    font-size: 56px;
+    line-height: 1;
+    font-weight: 800;
+    color: transparent;
+    -webkit-text-stroke: 1.5px #DC2626;
+    letter-spacing: -0.04em;
+    margin-bottom: 26px;
+    display: block;
+  }
+  .step-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  .step-card p { font-size: 15px; line-height: 1.6; }
+  .step-meta {
+    margin-top: 22px;
+    padding-top: 18px;
+    border-top: 1px dashed var(--border);
+    display: flex; align-items: center; gap: 8px;
+    font-size: 13px;
+    color: var(--muted);
+  }
+  .step-meta b { color: var(--navy); font-family: 'Manrope', sans-serif; font-weight: 700; }
+
+  /* ===== REVIEWS GRID (Google-review style) ===== */
+  .reviews-section { background: white; }
+  .reviews-hero {
+    text-align: center;
+    margin-bottom: 56px;
+  }
+  .reviews-hero .big-score {
+    display: inline-flex;
+    align-items: center;
+    gap: 26px;
+    padding: 18px 28px;
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 22px;
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 28px;
+  }
+  .big-score .num-block {
+    font-family: 'Manrope', sans-serif;
+    font-size: 44px;
+    font-weight: 800;
+    color: var(--navy);
+    line-height: 1;
+    letter-spacing: -0.03em;
+  }
+  .big-score .stars-block {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .big-score .stars-block .stars-row svg { width: 18px; height: 18px; }
+  .big-score .meta {
+    font-size: 13px;
+    color: var(--muted);
+  }
+  .big-score .meta b { color: var(--navy); font-weight: 600; }
+
+  .reviews-masonry {
+    columns: 3;
+    column-gap: 22px;
+  }
+  .review {
+    break-inside: avoid;
+    background: white;
+    border: 1px solid var(--border-soft);
+    border-radius: 18px;
+    padding: 22px 22px 20px;
+    margin-bottom: 22px;
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
+    transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+  }
+  .review:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--border);
+  }
+  .review-top {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+  .review-avatar {
+    width: 40px; height: 40px;
+    border-radius: 50%;
+    display: grid; place-items: center;
+    color: white;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    flex-shrink: 0;
+  }
+  .av-1 { background: linear-gradient(135deg, #DC2626, #F87171); }
+  .av-2 { background: linear-gradient(135deg, #10B981, #0891B2); }
+  .av-3 { background: linear-gradient(135deg, #BE185D, #DC2626); }
+  .av-4 { background: linear-gradient(135deg, #F59E0B, #EF4444); }
+  .av-5 { background: linear-gradient(135deg, #0F172A, #475569); }
+  .av-6 { background: linear-gradient(135deg, #EC4899, #F43F5E); }
+  .av-7 { background: linear-gradient(135deg, #B91C1C, #DC2626); }
+  .av-8 { background: linear-gradient(135deg, #14B8A6, #10B981); }
+  .av-9 { background: linear-gradient(135deg, #991B1B, #F43F5E); }
+  .review-who { flex: 1; min-width: 0; }
+  .review-who .name {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    color: var(--navy);
+    font-size: 14.5px;
+    line-height: 1.2;
+  }
+  .review-who .when {
+    font-size: 12.5px;
+    color: var(--muted);
+    margin-top: 2px;
+  }
+  .review .stars-row svg { width: 14px; height: 14px; }
+  .review p {
+    color: var(--navy-700);
+    font-size: 14.5px;
+    line-height: 1.55;
+    margin-top: 6px;
+  }
+  .g-icon {
+    width: 18px; height: 18px;
+    flex-shrink: 0;
+  }
+  .review-tag {
+    margin-top: 12px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 10px;
+    background: #ECFDF5;
+    color: #047857;
+    border-radius: 999px;
+    font-size: 11.5px;
+    font-weight: 600;
+    width: fit-content;
+  }
+  .review-tag.blue { background: #FEF2F2; color: var(--blue); }
+  .review-tag.indigo { background: #FFF1F2; color: #BE123C; }
+  .review-tag.amber { background: #FFFBEB; color: #B45309; }
+
+  /* ===== AREAS OF LAW ===== */
+  .areas-section {
+    background: var(--bg-soft);
+  }
+  .areas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+  .area-card {
+    background: white;
+    border: 1px solid var(--border-soft);
+    border-radius: var(--radius);
+    padding: 26px 22px;
+    transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    cursor: pointer;
+    text-align: left;
+  }
+  .area-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+    border-color: rgba(220,38,38,0.25);
+  }
+  .area-icon {
+    width: 42px; height: 42px;
+    border-radius: 11px;
+    background: #FEF2F2;
+    color: var(--blue);
+    display: grid; place-items: center;
+  }
+  .area-card h4 { font-size: 16px; }
+  .area-card p { font-size: 13px; line-height: 1.5; color: var(--muted); }
+  .area-arrow {
+    margin-top: auto;
+    font-size: 13px;
+    color: var(--blue);
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding-top: 8px;
+    transition: gap .2s ease;
+  }
+  .area-card:hover .area-arrow { gap: 10px; }
+
+  /* ===== FOUNDED BAND ===== */
+  .founded {
+    background: linear-gradient(180deg, white 0%, #fff1f1 100%);
+    position: relative;
+  }
+  .founded-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    gap: 70px;
+    align-items: center;
+  }
+  .founded-left h2 {
+    font-size: clamp(30px, 3.6vw, 44px);
+    letter-spacing: -0.03em;
+  }
+  .founded-left p { font-size: 17px; margin-top: 20px; line-height: 1.65; }
+  .founded-stats {
+    margin-top: 36px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+  }
+  .founded-stat .num {
+    font-family: 'Manrope', sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--navy);
+    letter-spacing: -0.02em;
+    line-height: 1;
+  }
+  .founded-stat .lab {
+    font-size: 13px;
+    color: var(--muted);
+    margin-top: 6px;
+  }
+  .founded-photo {
+    aspect-ratio: 5/4.4;
+    border-radius: var(--radius-xl);
+    background:
+      linear-gradient(135deg, rgba(15,23,42,0.08), rgba(15,23,42,0)),
+      repeating-linear-gradient(135deg, #E2E8F0 0 2px, #EEF2F7 2px 14px);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    position: relative;
+    display: flex; align-items: flex-end;
+    padding: 28px;
+  }
+  .founded-photo::before {
+    content: "";
+    position: absolute; inset: 0;
+    background: linear-gradient(180deg, rgba(15,23,42,0) 40%, rgba(15,23,42,0.6) 100%);
+  }
+  .founded-photo .ph-label {
+    position: absolute;
+    top: 18px; left: 18px;
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+    font-size: 11.5px;
+    color: var(--navy-700);
+    background: rgba(255,255,255,0.88);
+    padding: 5px 10px;
+    border-radius: 6px;
+    border: 1px solid var(--border-soft);
+  }
+  .founded-photo .cap {
+    position: relative; color: white;
+  }
+  .founded-photo .cap .sm {
+    font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; opacity: 0.78; font-weight: 600;
+  }
+  .founded-photo .cap .lg {
+    font-family: 'Manrope', sans-serif;
+    font-size: 22px; font-weight: 600; margin-top: 4px; letter-spacing: -0.01em;
+  }
+
+  /* ===== ARTICLES ===== */
+  .articles-section { background: white; }
+  .articles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+  .article {
+    background: white;
+    border: 1px solid var(--border-soft);
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform .25s ease, box-shadow .25s ease;
+    display: flex;
+    flex-direction: column;
+  }
+  .article:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+  }
+  .article-cover {
+    aspect-ratio: 16/9;
+    background:
+      linear-gradient(135deg, rgba(220,38,38,0.12), rgba(248,113,113,0.22)),
+      repeating-linear-gradient(135deg, #E2E8F0 0 2px, #EEF2F7 2px 12px);
+    position: relative;
+  }
+  .article-cover.c2 {
+    background:
+      linear-gradient(135deg, rgba(244,63,94,0.12), rgba(248,113,113,0.20)),
+      repeating-linear-gradient(135deg, #E2E8F0 0 2px, #EEF2F7 2px 12px);
+  }
+  .article-cover.c3 {
+    background:
+      linear-gradient(135deg, rgba(15,23,42,0.10), rgba(220,38,38,0.18)),
+      repeating-linear-gradient(135deg, #E2E8F0 0 2px, #EEF2F7 2px 12px);
+  }
+  .article-cover .ph {
+    position: absolute;
+    top: 14px; left: 14px;
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+    font-size: 10.5px;
+    background: rgba(255,255,255,0.86);
+    color: var(--navy-700);
+    padding: 4px 8px;
+    border-radius: 6px;
+    border: 1px solid var(--border-soft);
+  }
+  .article-body { padding: 24px 24px 28px; }
+  .article-meta {
+    display: flex; align-items: center; gap: 10px; margin-bottom: 12px;
+  }
+  .category {
+    font-size: 11.5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--blue);
+    background: #FEF2F2;
+    padding: 4px 10px;
+    border-radius: 999px;
+  }
+  .read-time {
+    font-size: 12.5px;
+    color: var(--muted-2);
+    font-weight: 500;
+  }
+  .article h4 {
+    font-size: 18px;
+    line-height: 1.3;
+    margin-bottom: 8px;
+  }
+  .article p {
+    font-size: 14px;
+    line-height: 1.55;
+  }
+
+  /* ===== CTA ===== */
+  .cta-section { padding: 0 0 110px; }
+  .cta-block {
+    padding: 70px 64px;
+    border-radius: 32px;
+    background:
+      radial-gradient(circle at 85% 20%, rgba(248,113,113,0.30), transparent 55%),
+      radial-gradient(circle at 10% 90%, rgba(220,38,38,0.35), transparent 55%),
+      linear-gradient(135deg, var(--navy) 0%, #1f1212 100%);
+    color: white;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+  }
+  .cta-block h2 {
+    color: white;
+    font-size: clamp(30px, 4vw, 46px);
+    letter-spacing: -0.03em;
+    max-width: 720px; margin: 0 auto;
+  }
+  .cta-block p {
+    color: rgba(255,255,255,0.78);
+    font-size: 17px;
+    margin: 18px auto 0;
+    max-width: 560px;
+    line-height: 1.6;
+  }
+  .cta-block .ctas {
+    margin-top: 36px;
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .cta-block .btn-primary {
+    background: white; color: var(--navy);
+    box-shadow: 0 14px 30px -10px rgba(0,0,0,0.4);
+  }
+  .cta-block .btn-primary:hover { background: #f1f5f9; }
+  .cta-block .btn-secondary {
+    background: transparent;
+    color: white;
+    border-color: rgba(255,255,255,0.25);
+  }
+  .cta-block .btn-secondary:hover {
+    background: rgba(255,255,255,0.08);
+    border-color: rgba(255,255,255,0.5);
+  }
+
+  /* ===== FAQ ===== */
+  .faq-section { background: var(--bg-soft); padding-bottom: 110px; }
+  .faq-grid {
+    display: grid;
+    grid-template-columns: 0.75fr 1fr;
+    gap: 70px;
+  }
+  .faq-aside h2 {
+    font-size: clamp(30px, 3.6vw, 42px);
+    letter-spacing: -0.03em;
+  }
+  .faq-aside p { font-size: 16px; margin-top: 18px; line-height: 1.6; }
+  .contact-card {
+    margin-top: 28px;
+    padding: 22px;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    background: white;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .contact-card .icon {
+    width: 42px; height: 42px;
+    border-radius: 11px;
+    background: #FEF2F2;
+    color: var(--blue);
+    display: grid; place-items: center;
+    flex-shrink: 0;
+  }
+  .contact-card .label {
+    font-size: 12.5px; color: var(--muted); font-weight: 500;
+  }
+  .contact-card .val {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    color: var(--navy);
+    margin-top: 2px;
+  }
+  .faq-list {
+    display: flex; flex-direction: column; gap: 10px;
+  }
+  .faq-item {
+    background: white;
+    border: 1px solid var(--border-soft);
+    border-radius: 14px;
+    transition: border-color .2s ease;
+  }
+  .faq-item summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 20px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    color: var(--navy);
+    font-size: 15.5px;
+  }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-item .plus {
+    width: 26px; height: 26px;
+    border-radius: 50%;
+    background: var(--bg-soft);
+    display: grid; place-items: center;
+    flex-shrink: 0;
+    transition: transform .25s ease, background .2s ease, color .2s ease;
+  }
+  .faq-item[open] .plus { transform: rotate(45deg); background: #FEF2F2; color: var(--blue); }
+  .faq-item[open] { border-color: rgba(220,38,38,0.3); box-shadow: var(--shadow-sm); }
+  .faq-answer {
+    padding: 0 24px 22px;
+    color: var(--muted);
+    font-size: 14.5px;
+    line-height: 1.65;
+    max-width: 620px;
+  }
+
+  /* ===== FOOTER ===== */
+  footer {
+    background: var(--navy);
+    color: white;
+    padding: 80px 0 32px;
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr 1fr 1fr 1fr;
+    gap: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  .footer-brand .brand { color: white; font-size: 18px; }
+  .footer-brand p {
+    color: rgba(255,255,255,0.6);
+    font-size: 14px;
+    margin-top: 18px;
+    line-height: 1.6;
+    max-width: 320px;
+  }
+  .footer-socials {
+    display: flex;
+    gap: 10px;
+    margin-top: 24px;
+  }
+  .footer-socials a {
+    width: 38px; height: 38px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.1);
+    display: grid; place-items: center;
+    color: white;
+    transition: background .2s ease, transform .2s ease;
+  }
+  .footer-socials a:hover { background: rgba(255,255,255,0.12); transform: translateY(-2px); }
+  .footer-col h5 {
+    color: white;
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 18px;
+  }
+  .footer-col ul {
+    list-style: none;
+    padding: 0; margin: 0;
+    display: flex; flex-direction: column;
+    gap: 10px;
+  }
+  .footer-col li a {
+    color: rgba(255,255,255,0.6);
+    font-size: 14px;
+    transition: color .2s ease;
+  }
+  .footer-col li a:hover { color: white; }
+  .footer-bottom {
+    margin-top: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    color: rgba(255,255,255,0.5);
+    font-size: 13px;
+  }
+  .lang-badges {
+    display: flex; gap: 6px; flex-wrap: wrap;
+  }
+  .lang-badge {
+    padding: 4px 10px;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 999px;
+    font-size: 12px;
+    color: rgba(255,255,255,0.78);
+    font-weight: 500;
+  }
+
+  /* FLOATING CONSULT */
+  .floating-consult {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 60;
+    background: var(--blue);
+    color: white;
+    padding: 14px 22px 14px 18px;
+    border-radius: 999px;
+    box-shadow: 0 20px 40px -12px rgba(220,38,38,0.55), 0 8px 20px -8px rgba(220,38,38,0.3);
+    font-weight: 600;
+    font-size: 14.5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    border: none;
+    font-family: inherit;
+    transition: transform .2s ease, box-shadow .2s ease;
+  }
+  .floating-consult:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 28px 60px -16px rgba(220,38,38,0.65);
+  }
+  .floating-consult .pulse {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--emerald);
+    box-shadow: 0 0 0 0 rgba(16,185,129,0.6);
+    animation: pulse 2s infinite;
+  }
+
+  /* Reveal on scroll */
+  .reveal { opacity: 0; transform: translateY(18px); transition: opacity .6s ease, transform .6s ease; }
+  .reveal.in { opacity: 1; transform: none; }
+
+  /* Responsive */
+  @media (max-width: 1100px) {
+    .reviews-masonry { columns: 2; }
+    .areas { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 1024px) {
+    .hero-grid { grid-template-columns: 1fr; gap: 60px; }
+    .float-chip.fc1 { left: -8px; }
+    .float-chip.fc2 { right: -8px; }
+    .steps, .articles { grid-template-columns: 1fr; }
+    .founded-grid, .faq-grid { grid-template-columns: 1fr; gap: 40px; }
+    .cta-block { padding: 50px 28px; }
+    .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+    .nav-links { display: none; }
+  }
+  @media (max-width: 640px) {
+    .container { padding: 0 20px; }
+    section { padding: 72px 0; }
+    .hero { padding: 40px 0 60px; }
+    .reviews-masonry { columns: 1; }
+    .areas { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr; }
+    .floating-consult span.label { display: none; }
+    .section-head.left { flex-direction: column; align-items: flex-start; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="#" class="brand">
+      <img src="assets/pokharel-logo.png" alt="Pokharel Law" style="width:42px;height:42px;object-fit:contain;" />
+      <span>Pokharel Law</span>
+    </a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#how">How it works</a>
+      <a href="#areas">Practice areas</a>
+      <a href="#reviews">Client stories</a>
+      <a href="#faq">FAQ</a>
+    </div>
+    <div class="nav-cta-group">
+      <span class="lang-pill"><span class="dot"></span>EN · NE · HI · +9</span>
+      <a href="#intake" class="btn btn-primary">Book a consultation
+        <svg class="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="intake">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow"><span class="eyebrow-tag">Founder-led</span> Immigration &amp; refugee law · Toronto</span>
+      <h1>Need a <span class="hl">refugee lawyer</span> in Canada?</h1>
+      <p class="hero-sub">Pokharel Law provides direct, founder-led representation in refugee and immigration matters — from your first call to the final decision, with the time each case deserves.</p>
+
+      <div class="hero-stats">
+        <div class="stat"><span class="num">100+</span><span class="lab">refugees represented</span></div>
+        <span class="stat-divider"></span>
+        <div class="stat"><span class="num">12</span><span class="lab">languages spoken</span></div>
+        <span class="stat-divider"></span>
+        <div class="stat"><span class="num">1 day</span><span class="lab">response time</span></div>
+      </div>
+
+      <div class="review-badge" aria-label="Credentials">
+        <div style="width:40px;height:40px;border-radius:11px;background:#FEF2F2;color:var(--blue);display:grid;place-items:center;flex-shrink:0;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div>
+          <span class="score" style="display:block; line-height:1.25;">Licensed by the Law Society of Ontario</span>
+          <span class="count">Called to the Ontario Bar · LLM, Université de Montréal</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- INTAKE QUIZ CARD -->
+    <div class="hero-visual" style="position: relative;">
+      <div class="quiz-card">
+        <div class="quiz-head">
+          <div class="title"><span class="dot"></span>Free case assessment</div>
+          <div class="step-pill">Step 1 of 3</div>
+        </div>
+        <div class="quiz-progress"><div class="bar"></div></div>
+        <div class="quiz-body">
+          <div class="quiz-q-label">Question 1</div>
+          <div class="quiz-q">What kind of legal help do you need?</div>
+          <div class="quiz-options" id="quizOptions">
+            <div class="quiz-option selected" data-id="refugee">
+              <div class="icon-bubble"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+              <div class="label">File a refugee claim</div>
+              <div class="check"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+            </div>
+            <div class="quiz-option" data-id="appeal">
+              <div class="icon-bubble"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg></div>
+              <div class="label">Appeal a refusal (RAD / Federal Court)</div>
+              <div class="check"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+            </div>
+            <div class="quiz-option" data-id="sponsor">
+              <div class="icon-bubble"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+              <div class="label">Sponsor a family member</div>
+              <div class="check"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+            </div>
+            <div class="quiz-option" data-id="permit">
+              <div class="icon-bubble"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
+              <div class="label">Work / study permit or PR</div>
+              <div class="check"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+            </div>
+            <div class="quiz-option" data-id="other">
+              <div class="icon-bubble"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg></div>
+              <div class="label">I'm not sure — I just need advice</div>
+              <div class="check"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+            </div>
+          </div>
+        </div>
+        <div class="quiz-foot">
+          <div class="quiz-meta">
+            <svg class="lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            Free &amp; confidential · No obligation
+          </div>
+          <button class="btn-next" type="button">
+            Continue
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="float-chip fc1">
+        <div class="icon green"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+        Claim approved · Family of 4
+      </div>
+      <div class="float-chip fc2">
+        <div class="icon blue"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+        14+ languages
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- STRIP -->
+<div class="strip">
+  <div class="container strip-inner">
+    <div class="strip-label">Appearing before</div>
+    <div class="strip-items">
+      <span>Law Society of Ontario</span>
+      <span>Refugee Protection Division</span>
+      <span>Refugee Appeal Division</span>
+      <span>Federal Court of Canada</span>
+      <span>IRCC</span>
+    </div>
+  </div>
+</div>
+
+<!-- HOW IT WORKS -->
+<section class="how" id="how">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-eyebrow">How we work</span>
+      <h2>How it works</h2>
+      <p>Founder-led representation, in your language — for refugees and newcomers across Ontario and Canada.</p>
+    </div>
+
+    <div class="steps">
+      <div class="step-card reveal">
+        <span class="step-index">01</span>
+        <h3>Tell us your situation</h3>
+        <p>Answer a few simple questions about your case and where you live in Canada. Takes about 2 minutes.</p>
+        <div class="step-meta"><b>~ 2 min</b> · Free &amp; confidential</div>
+      </div>
+      <div class="step-card reveal">
+        <span class="step-index">02</span>
+        <h3>We review your file personally</h3>
+        <p>Mr. Pokharel and the team read your matter and respond with a private consultation — usually within one business day.</p>
+        <div class="step-meta"><b>1 business day</b> · No obligation</div>
+      </div>
+      <div class="step-card reveal">
+        <span class="step-index">03</span>
+        <h3>We build and represent your case</h3>
+        <p>From evidence and forms to your IRB hearing, RAD appeal, or Federal Court review — we carry the file end to end.</p>
+        <div class="step-meta"><b>End-to-end</b> · Transparent pricing</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews-section" id="reviews">
+  <div class="container">
+    <div class="reviews-hero reveal">
+      <span class="section-eyebrow">Client stories</span>
+      <h2 style="font-size: clamp(32px, 4vw, 48px); letter-spacing: -0.03em;">Trusted by newcomers across Canada</h2>
+      <p style="max-width: 620px; margin: 18px auto 0; font-size: 17px;">Representative experiences from people we've guided through the refugee and immigration process.</p>
+    </div>
+
+    <div class="reviews-masonry reveal">
+      <!-- 1 -->
+      <div class="review">
+        <div class="review-top">
+          <div class="review-avatar av-1">AM</div>
+          <div class="review-who">
+            <div class="name">Amira M.</div>
+            <div class="when">4 days ago · Toronto</div>
+          </div>
+          <svg class="g-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M23.04 12.26c0-.82-.07-1.61-.21-2.36H12v4.46h6.2a5.3 5.3 0 0 1-2.3 3.48v2.9h3.72c2.18-2 3.42-4.96 3.42-8.48z"/><path fill="#34A853" d="M12 23c3.1 0 5.7-1.03 7.6-2.78l-3.72-2.9c-1.03.7-2.35 1.1-3.88 1.1-2.98 0-5.5-2.02-6.4-4.72H1.74v2.97A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.6 13.7a6.6 6.6 0 0 1 0-4.2V6.53H1.74a11 11 0 0 0 0 9.94l3.86-2.77z"/><path fill="#EA4335" d="M12 5.38c1.68 0 3.2.58 4.4 1.72l3.3-3.3C17.7 1.95 15.1 1 12 1A11 11 0 0 0 1.74 6.53l3.86 2.97c.9-2.7 3.42-4.72 6.4-4.72z"/></svg>
+        </div>
+        <div class="stars-row" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <p>They prepared us for our hearing in Arabic. When the positive decision came back, our lawyer cried with us. I will never forget that.</p>
+        <span class="review-tag">Refugee claim approved</span>
+      </div>
+
+      <!-- 2 -->
+      <div class="review">
+        <div class="review-top">
+          <div class="review-avatar av-2">JR</div>
+          <div class="review-who">
+            <div class="name">José R.</div>
+            <div class="when">1 week ago · Montréal</div>
+          </div>
+          <svg class="g-icon" viewBox="0 0 24 24"><path fill="#4285F4" d="M23.04 12.26c0-.82-.07-1.61-.21-2.36H12v4.46h6.2a5.3 5.3 0 0 1-2.3 3.48v2.9h3.72c2.18-2 3.42-4.96 3.42-8.48z"/><path fill="#34A853" d="M12 23c3.1 0 5.7-1.03 7.6-2.78l-3.72-2.9c-1.03.7-2.35 1.1-3.88 1.1-2.98 0-5.5-2.02-6.4-4.72H1.74v2.97A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.6 13.7a6.6 6.6 0 0 1 0-4.2V6.53H1.74a11 11 0 0 0 0 9.94l3.86-2.77z"/><path fill="#EA4335" d="M12 5.38c1.68 0 3.2.58 4.4 1.72l3.3-3.3C17.7 1.95 15.1 1 12 1A11 11 0 0 0 1.74 6.53l3.86 2.97c.9-2.7 3.42-4.72 6.4-4.72z"/></svg>
+        </div>
+        <div class="stars-row" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <p>After a refusal I thought it was over. They rebuilt my case from the ground up — and won. My children can finally call Canada home. The whole team was so patient with me.</p>
+        <span class="review-tag blue">H&amp;C application — PR granted</span>
+      </div>
+
+      <!-- 3 -->
+      <div class="review">
+        <div class="review-top">
+          <div class="review-avatar av-3">HK</div>
+          <div class="review-who">
+            <div class="name">Hamid K.</div>
+            <div class="when">2 weeks ago · Vancouver</div>
+          </div>
+          <svg class="g-icon" viewBox="0 0 24 24"><path fill="#4285F4" d="M23.04 12.26c0-.82-.07-1.61-.21-2.36H12v4.46h6.2a5.3 5.3 0 0 1-2.3 3.48v2.9h3.72c2.18-2 3.42-4.96 3.42-8.48z"/><path fill="#34A853" d="M12 23c3.1 0 5.7-1.03 7.6-2.78l-3.72-2.9c-1.03.7-2.35 1.1-3.88 1.1-2.98 0-5.5-2.02-6.4-4.72H1.74v2.97A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.6 13.7a6.6 6.6 0 0 1 0-4.2V6.53H1.74a11 11 0 0 0 0 9.94l3.86-2.77z"/><path fill="#EA4335" d="M12 5.38c1.68 0 3.2.58 4.4 1.72l3.3-3.3C17.7 1.95 15.1 1 12 1A11 11 0 0 0 1.74 6.53l3.86 2.97c.9-2.7 3.42-4.72 6.4-4.72z"/></svg>
+        </div>
+        <div class="stars-row" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <p>They sponsored my wife and son so we could finally live together. Every email was answered. Every step was explained.</p>
+        <span class="review-tag indigo">Spousal sponsorship</span>
+      </div>
+
+      <!-- 4 -->
+      <div class="review">
+        <div class="review-top">
+          <div class="review-avatar av-4">SM</div>
+          <div class="review-who">
+            <div class="name">Sara M.</div>
+            <div class="when">3 weeks ago · Ottawa</div>
+          </div>
+          <svg class="g-icon" viewBox="0 0 24 24"><path fill="#4285F4" d="M23.04 12.26c0-.82-.07-1.61-.21-2.36H12v4.46h6.2a5.3 5.3 0 0 1-2.3 3.48v2.9h3.72c2.18-2 3.42-4.96 3.42-8.48z"/><path fill="#34A853" d="M12 23c3.1 0 5.7-1.03 7.6-2.78l-3.72-2.9c-1.03.7-2.35 1.1-3.88 1.1-2.98 0-5.5-2.02-6.4-4.72H1.74v2.97A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.6 13.7a6.6 6.6 0 0 1 0-4.2V6.53H1.74a11 11 0 0 0 0 9.94l3.86-2.77z"/><path fill="#EA4335" d="M12 5.38c1.68 0 3.2.58 4.4 1.72l3.3-3.3C17.7 1.95 15.1 1 12 1A11 11 0 0 0 1.74 6.53l3.86 2.97c.9-2.7 3.42-4.72 6.4-4.72z"/></svg>
+        </div>
+        <div class="stars-row" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <p>Quick callback after I submitted my situation. Lawyer was very professional, answered all my questions in Farsi. I felt understood.</p>
+        <span class="review-tag amber">PRRA application</span>
+      </div>
+
+      <!-- 5 -->
+      <div class="review">
+        <div class="review-top">
+          <div class="review-avatar av-5">TT</div>
+          <div class="review-who">
+            <div class="name">Tigist T.</div>
+            <div class="when">1 month ago · Calgary</div>
+          </div>
+          <svg class="g-icon" viewBox="0 0 24 24"><path fill="#4285F4" d="M23.04 12.26c0-.82-.07-1.61-.21-2.36H12v4.46h6.2a5.3 5.3 0 0 1-2.3 3.48v2.9h3.72c2.18-2 3.42-4.96 3.42-8.48z"/><path fill="#34A853" d="M12 23c3.1 0 5.7-1.03 7.6-2.78l-3.72-2.9c-1.03.7-2.35 1.1-3.88 1.1-2.98 0-5.5-2.02-6.4-4.72H1.74v2.97A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.6 13.7a6.6 6.6 0 0 1 0-4.2V6.53H1.74a11 11 0 0 0 0 9.94l3.86-2.77z"/><path fill="#EA4335" d="M12 5.38c1.68 0 3.2.58 4.4 1.72l3.3-3.3C17.7 1.95 15.1 1 12 1A11 11 0 0 0 1.74 6.53l3.86 2.97c.9-2.7 3.42-4.72 6.4-4.72z"/></svg>
+        </div>
+        <div class="stars-row" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <p>The team was amazing through my whole IRB hearing process. They explained everything in Tigrinya and never made me feel like a number. Worth every penny.</p>
+        <span class="review-tag">Hearing — positive decision</span>
+      </div>
+
+      <!-- 6 -->
+      <div class="review">
+        <div class="review-top">
+          <div class="review-avatar av-6">NB</div>
+          <div class="review-who">
+            <div class="name">Noor B.</div>
+            <div class="when">1 month ago · Mississauga</div>
+          </div>
+          <svg class="g-icon" viewBox="0 0 24 24"><path fill="#4285F4" d="M23.04 12.26c0-.82-.07-1.61-.21-2.36H12v4.46h6.2a5.3 5.3 0 0 1-2.3 3.48v2.9h3.72c2.18-2 3.42-4.96 3.42-8.48z"/><path fill="#34A853" d="M12 23c3.1 0 5.7-1.03 7.6-2.78l-3.72-2.9c-1.03.7-2.35 1.1-3.88 1.1-2.98 0-5.5-2.02-6.4-4.72H1.74v2.97A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.6 13.7a6.6 6.6 0 0 1 0-4.2V6.53H1.74a11 11 0 0 0 0 9.94l3.86-2.77z"/><path fill="#EA4335" d="M12 5.38c1.68 0 3.2.58 4.4 1.72l3.3-3.3C17.7 1.95 15.1 1 12 1A11 11 0 0 0 1.74 6.53l3.86 2.97c.9-2.7 3.42-4.72 6.4-4.72z"/></svg>
+        </div>
+        <div class="stars-row" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <p>Fast response within a day. The lawyer was clear, kind, and gave honest feedback about my chances. No false promises.</p>
+        <span class="review-tag blue">Initial consultation</span>
+      </div>
+
+      <!-- 7 -->
+      <div class="review">
+        <div class="review-top">
+          <div class="review-avatar av-7">DL</div>
+          <div class="review-who">
+            <div class="name">Daniel L.</div>
+            <div class="when">2 months ago · Edmonton</div>
+          </div>
+          <svg class="g-icon" viewBox="0 0 24 24"><path fill="#4285F4" d="M23.04 12.26c0-.82-.07-1.61-.21-2.36H12v4.46h6.2a5.3 5.3 0 0 1-2.3 3.48v2.9h3.72c2.18-2 3.42-4.96 3.42-8.48z"/><path fill="#34A853" d="M12 23c3.1 0 5.7-1.03 7.6-2.78l-3.72-2.9c-1.03.7-2.35 1.1-3.88 1.1-2.98 0-5.5-2.02-6.4-4.72H1.74v2.97A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.6 13.7a6.6 6.6 0 0 1 0-4.2V6.53H1.74a11 11 0 0 0 0 9.94l3.86-2.77z"/><path fill="#EA4335" d="M12 5.38c1.68 0 3.2.58 4.4 1.72l3.3-3.3C17.7 1.95 15.1 1 12 1A11 11 0 0 0 1.74 6.53l3.86 2.97c.9-2.7 3.42-4.72 6.4-4.72z"/></svg>
+        </div>
+        <div class="stars-row" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <p>RefugeePath helped me file an open work permit while my claim was pending. I was working within weeks. Forever thankful.</p>
+        <span class="review-tag indigo">Open work permit</span>
+      </div>
+
+      <!-- 8 -->
+      <div class="review">
+        <div class="review-top">
+          <div class="review-avatar av-8">YO</div>
+          <div class="review-who">
+            <div class="name">Yusuf O.</div>
+            <div class="when">2 months ago · Winnipeg</div>
+          </div>
+          <svg class="g-icon" viewBox="0 0 24 24"><path fill="#4285F4" d="M23.04 12.26c0-.82-.07-1.61-.21-2.36H12v4.46h6.2a5.3 5.3 0 0 1-2.3 3.48v2.9h3.72c2.18-2 3.42-4.96 3.42-8.48z"/><path fill="#34A853" d="M12 23c3.1 0 5.7-1.03 7.6-2.78l-3.72-2.9c-1.03.7-2.35 1.1-3.88 1.1-2.98 0-5.5-2.02-6.4-4.72H1.74v2.97A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.6 13.7a6.6 6.6 0 0 1 0-4.2V6.53H1.74a11 11 0 0 0 0 9.94l3.86-2.77z"/><path fill="#EA4335" d="M12 5.38c1.68 0 3.2.58 4.4 1.72l3.3-3.3C17.7 1.95 15.1 1 12 1A11 11 0 0 0 1.74 6.53l3.86 2.97c.9-2.7 3.42-4.72 6.4-4.72z"/></svg>
+        </div>
+        <div class="stars-row" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <p>The team prepped me carefully for my RAD appeal. Every document was perfect. Result came back in my favour.</p>
+        <span class="review-tag">RAD appeal — allowed</span>
+      </div>
+
+      <!-- 9 -->
+      <div class="review">
+        <div class="review-top">
+          <div class="review-avatar av-9">LP</div>
+          <div class="review-who">
+            <div class="name">Linh P.</div>
+            <div class="when">3 months ago · Halifax</div>
+          </div>
+          <svg class="g-icon" viewBox="0 0 24 24"><path fill="#4285F4" d="M23.04 12.26c0-.82-.07-1.61-.21-2.36H12v4.46h6.2a5.3 5.3 0 0 1-2.3 3.48v2.9h3.72c2.18-2 3.42-4.96 3.42-8.48z"/><path fill="#34A853" d="M12 23c3.1 0 5.7-1.03 7.6-2.78l-3.72-2.9c-1.03.7-2.35 1.1-3.88 1.1-2.98 0-5.5-2.02-6.4-4.72H1.74v2.97A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.6 13.7a6.6 6.6 0 0 1 0-4.2V6.53H1.74a11 11 0 0 0 0 9.94l3.86-2.77z"/><path fill="#EA4335" d="M12 5.38c1.68 0 3.2.58 4.4 1.72l3.3-3.3C17.7 1.95 15.1 1 12 1A11 11 0 0 0 1.74 6.53l3.86 2.97c.9-2.7 3.42-4.72 6.4-4.72z"/></svg>
+        </div>
+        <div class="stars-row" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <p>Citizenship application after years of waiting. Fast, organized, and they explained the test in detail. Highly recommend.</p>
+        <span class="review-tag amber">Citizenship granted</span>
+      </div>
+
+      <!-- 10 -->
+      <div class="review">
+        <div class="review-top">
+          <div class="review-avatar av-1">RN</div>
+          <div class="review-who">
+            <div class="name">Rana N.</div>
+            <div class="when">3 months ago · Toronto</div>
+          </div>
+          <svg class="g-icon" viewBox="0 0 24 24"><path fill="#4285F4" d="M23.04 12.26c0-.82-.07-1.61-.21-2.36H12v4.46h6.2a5.3 5.3 0 0 1-2.3 3.48v2.9h3.72c2.18-2 3.42-4.96 3.42-8.48z"/><path fill="#34A853" d="M12 23c3.1 0 5.7-1.03 7.6-2.78l-3.72-2.9c-1.03.7-2.35 1.1-3.88 1.1-2.98 0-5.5-2.02-6.4-4.72H1.74v2.97A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.6 13.7a6.6 6.6 0 0 1 0-4.2V6.53H1.74a11 11 0 0 0 0 9.94l3.86-2.77z"/><path fill="#EA4335" d="M12 5.38c1.68 0 3.2.58 4.4 1.72l3.3-3.3C17.7 1.95 15.1 1 12 1A11 11 0 0 0 1.74 6.53l3.86 2.97c.9-2.7 3.42-4.72 6.4-4.72z"/></svg>
+        </div>
+        <div class="stars-row" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <p>Honestly, I was scared to call any lawyer. Their intake felt human, not bureaucratic. Within a day a real lawyer called me. Excellent service.</p>
+        <span class="review-tag">First contact</span>
+      </div>
+
+      <!-- 11 -->
+      <div class="review">
+        <div class="review-top">
+          <div class="review-avatar av-2">EM</div>
+          <div class="review-who">
+            <div class="name">Esther M.</div>
+            <div class="when">4 months ago · Mississauga</div>
+          </div>
+          <svg class="g-icon" viewBox="0 0 24 24"><path fill="#4285F4" d="M23.04 12.26c0-.82-.07-1.61-.21-2.36H12v4.46h6.2a5.3 5.3 0 0 1-2.3 3.48v2.9h3.72c2.18-2 3.42-4.96 3.42-8.48z"/><path fill="#34A853" d="M12 23c3.1 0 5.7-1.03 7.6-2.78l-3.72-2.9c-1.03.7-2.35 1.1-3.88 1.1-2.98 0-5.5-2.02-6.4-4.72H1.74v2.97A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.6 13.7a6.6 6.6 0 0 1 0-4.2V6.53H1.74a11 11 0 0 0 0 9.94l3.86-2.77z"/><path fill="#EA4335" d="M12 5.38c1.68 0 3.2.58 4.4 1.72l3.3-3.3C17.7 1.95 15.1 1 12 1A11 11 0 0 0 1.74 6.53l3.86 2.97c.9-2.7 3.42-4.72 6.4-4.72z"/></svg>
+        </div>
+        <div class="stars-row" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <p>The team prepared my BOC narrative carefully. They listened without judgment. Truly grateful — I have refugee status now.</p>
+        <span class="review-tag">Refugee status</span>
+      </div>
+
+      <!-- 12 -->
+      <div class="review">
+        <div class="review-top">
+          <div class="review-avatar av-3">PV</div>
+          <div class="review-who">
+            <div class="name">Priya V.</div>
+            <div class="when">5 months ago · Brampton</div>
+          </div>
+          <svg class="g-icon" viewBox="0 0 24 24"><path fill="#4285F4" d="M23.04 12.26c0-.82-.07-1.61-.21-2.36H12v4.46h6.2a5.3 5.3 0 0 1-2.3 3.48v2.9h3.72c2.18-2 3.42-4.96 3.42-8.48z"/><path fill="#34A853" d="M12 23c3.1 0 5.7-1.03 7.6-2.78l-3.72-2.9c-1.03.7-2.35 1.1-3.88 1.1-2.98 0-5.5-2.02-6.4-4.72H1.74v2.97A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.6 13.7a6.6 6.6 0 0 1 0-4.2V6.53H1.74a11 11 0 0 0 0 9.94l3.86-2.77z"/><path fill="#EA4335" d="M12 5.38c1.68 0 3.2.58 4.4 1.72l3.3-3.3C17.7 1.95 15.1 1 12 1A11 11 0 0 0 1.74 6.53l3.86 2.97c.9-2.7 3.42-4.72 6.4-4.72z"/></svg>
+        </div>
+        <div class="stars-row" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <p>Spousal sponsorship completed in record time. Transparent flat fee. No hidden costs. I would recommend them to anyone in my community.</p>
+        <span class="review-tag blue">Sponsorship · approved</span>
+      </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 36px;">
+      <a href="#contact" class="btn btn-secondary">Book a consultation
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- AREAS OF LAW -->
+<section class="areas-section" id="areas">
+  <div class="container">
+    <div class="section-head left reveal">
+      <div class="copy">
+        <span class="section-eyebrow">Practice areas</span>
+        <h2>Refugee and immigration work, end to end.</h2>
+        <p>A deliberately narrow scope — areas where our counsel has direct tribunal and Federal Court experience.</p>
+      </div>
+      <a href="#intake" class="btn btn-dark">Book a consultation
+        <svg class="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </div>
+
+    <div class="areas">
+      <a href="#" class="area-card">
+        <div class="area-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <h4>Refugee Claims</h4>
+        <p>Inland and port-of-entry claims, IRB hearings, evidence packages.</p>
+        <span class="area-arrow">Learn more →</span>
+      </a>
+      <a href="#" class="area-card">
+        <div class="area-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg></div>
+        <h4>Refugee Appeals</h4>
+        <p>RAD appeals and Federal Court judicial review after a refusal.</p>
+        <span class="area-arrow">Learn more →</span>
+      </a>
+      <a href="#" class="area-card">
+        <div class="area-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
+        <h4>PRRA Applications</h4>
+        <p>Pre-Removal Risk Assessment submissions with new evidence.</p>
+        <span class="area-arrow">Learn more →</span>
+      </a>
+      <a href="#" class="area-card">
+        <div class="area-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+        <h4>H&amp;C Applications</h4>
+        <p>Humanitarian &amp; compassionate applications rooted in your story.</p>
+        <span class="area-arrow">Learn more →</span>
+      </a>
+      <a href="#" class="area-card">
+        <div class="area-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        <h4>Family Sponsorship</h4>
+        <p>Spouse, partner, child, and parent / grandparent sponsorships.</p>
+        <span class="area-arrow">Learn more →</span>
+      </a>
+      <a href="#" class="area-card">
+        <div class="area-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
+        <h4>Work &amp; Study Permits</h4>
+        <p>LMIA, open and post-graduate work permits, study permits.</p>
+        <span class="area-arrow">Learn more →</span>
+      </a>
+      <a href="#" class="area-card">
+        <div class="area-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></div>
+        <h4>PR &amp; Citizenship</h4>
+        <p>Permanent residency, citizenship applications and refusals.</p>
+        <span class="area-arrow">Learn more →</span>
+      </a>
+      <a href="#" class="area-card">
+        <div class="area-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+        <h4>Detention Hearings</h4>
+        <p>CBSA detention reviews and urgent release representation.</p>
+        <span class="area-arrow">Learn more →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOUNDED -->
+<section class="founded" id="about">
+  <div class="container founded-grid">
+    <div class="founded-left reveal">
+      <span class="section-eyebrow">About the firm</span>
+      <h2>A practice rooted in refugee and immigration law.</h2>
+      <p>Pokharel Law was founded in August 2024 to provide direct, founder-led representation in matters that often involve people at the most vulnerable points of their lives. Before founding the firm, Mr. Pokharel practised at one of Toronto's largest refugee law firms, representing clients across a wide range of refugee and immigration cases.</p>
+      <p style="margin-top:16px;">Called to the Ontario Bar in November 2022, he holds an LLB (Hons) from BPP University in the United Kingdom and an LLM in Business Law from the Université de Montréal. He leads a diverse team that serves clients in Nepali, Hindi, Bengali, Punjabi, Tamil, Telugu, and more.</p>
+      <div class="founded-stats">
+        <div class="founded-stat">
+          <div class="num">100+</div>
+          <div class="lab">refugees represented</div>
+        </div>
+        <div class="founded-stat">
+          <div class="num">12</div>
+          <div class="lab">languages across our team</div>
+        </div>
+        <div class="founded-stat">
+          <div class="num">2024</div>
+          <div class="lab">founder-led since</div>
+        </div>
+      </div>
+    </div>
+    <div class="founded-photo reveal" style="padding:0; display:block;">
+      <img src="team-rajendra.jpg" alt="Rajendra Pokharel, Founder &amp; Principal Lawyer" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:50% 18%;" />
+      <div style="position:absolute; inset:0; z-index:2; display:flex; flex-direction:column; justify-content:flex-end; padding:28px; background:linear-gradient(180deg, rgba(15,23,42,0) 45%, rgba(15,23,42,0.72) 100%); color:white; border-radius:inherit;">
+        <div style="font-size:12px; text-transform:uppercase; letter-spacing:0.1em; opacity:0.85; font-weight:600;">Founder &amp; Principal Lawyer</div>
+        <div style="font-family:'Manrope',sans-serif; font-size:22px; font-weight:600; margin-top:4px; letter-spacing:-0.01em;">“Your justice. My mission.” — Rajendra Pokharel</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ARTICLES -->
+<section class="articles-section" id="articles">
+  <div class="container">
+    <div class="section-head left reveal">
+      <div class="copy">
+        <span class="section-eyebrow">Legal articles</span>
+        <h2>Plain-language guides to Canada's immigration system.</h2>
+        <p>Written by our lawyers. Free to read. Always up to date with the latest IRCC and IRB rules.</p>
+      </div>
+      <a href="#" class="btn btn-secondary">All articles →</a>
+    </div>
+
+    <div class="articles">
+      <article class="article reveal">
+        <div class="article-cover"><image-slot id="art-refugee" shape="rect" fit="cover" src="https://picsum.photos/seed/pl-refugee-claims/800/450?grayscale" placeholder="Drop cover image" style="position:absolute;inset:0;width:100%;height:100%;"></image-slot></div>
+        <div class="article-body">
+          <div class="article-meta">
+            <span class="category">Refugee Claims</span>
+            <span class="read-time">8 min read</span>
+          </div>
+          <h4>How refugee claims work in Canada — start to finish.</h4>
+          <p>From the eligibility interview to your IRB hearing, with realistic timelines.</p>
+        </div>
+      </article>
+      <article class="article reveal">
+        <div class="article-cover c2"><image-slot id="art-prra" shape="rect" fit="cover" src="https://picsum.photos/seed/pl-prra-docs/800/450?grayscale" placeholder="Drop cover image" style="position:absolute;inset:0;width:100%;height:100%;"></image-slot></div>
+        <div class="article-body">
+          <div class="article-meta">
+            <span class="category">PRRA</span>
+            <span class="read-time">6 min read</span>
+          </div>
+          <h4>PRRA explained: when, why, and how to apply.</h4>
+          <p>If you're facing removal, a PRRA may be your next step. Here's exactly what it is.</p>
+        </div>
+      </article>
+      <article class="article reveal">
+        <div class="article-cover c3"><image-slot id="art-appeals" shape="rect" fit="cover" src="https://picsum.photos/seed/pl-appeals-letter/800/450?grayscale" placeholder="Drop cover image" style="position:absolute;inset:0;width:100%;height:100%;"></image-slot></div>
+        <div class="article-body">
+          <div class="article-meta">
+            <span class="category">Appeals</span>
+            <span class="read-time">7 min read</span>
+          </div>
+          <h4>What happens after a refusal — your real options.</h4>
+          <p>RAD appeals, judicial review, H&amp;C, and PRRA — which applies to you.</p>
+        </div>
+      </article>
+      <article class="article reveal">
+        <div class="article-cover c2"><image-slot id="art-hearings" shape="rect" fit="cover" src="https://picsum.photos/seed/pl-hearing-room/800/450?grayscale" placeholder="Drop cover image" style="position:absolute;inset:0;width:100%;height:100%;"></image-slot></div>
+        <div class="article-body">
+          <div class="article-meta">
+            <span class="category">Hearings</span>
+            <span class="read-time">9 min read</span>
+          </div>
+          <h4>The refugee hearing process — what to expect.</h4>
+          <p>Room layout, common questions, and how to prepare emotionally and legally.</p>
+        </div>
+      </article>
+      <article class="article reveal">
+        <div class="article-cover"><image-slot id="art-sponsorship" shape="rect" fit="cover" src="https://picsum.photos/seed/pl-family-pr/800/450?grayscale" placeholder="Drop cover image" style="position:absolute;inset:0;width:100%;height:100%;"></image-slot></div>
+        <div class="article-body">
+          <div class="article-meta">
+            <span class="category">Sponsorship</span>
+            <span class="read-time">5 min read</span>
+          </div>
+          <h4>The spousal sponsorship guide for newcomers.</h4>
+          <p>Eligibility, documents, processing times, and common mistakes that cause delays.</p>
+        </div>
+      </article>
+      <article class="article reveal">
+        <div class="article-cover c3"><image-slot id="art-citizenship" shape="rect" fit="cover" src="https://picsum.photos/seed/pl-citizenship-oath/800/450?grayscale" placeholder="Drop cover image" style="position:absolute;inset:0;width:100%;height:100%;"></image-slot></div>
+        <div class="article-body">
+          <div class="article-meta">
+            <span class="category">Citizenship</span>
+            <span class="read-time">6 min read</span>
+          </div>
+          <h4>Citizenship timeline: from PR card to oath.</h4>
+          <p>How long it really takes, the residency calculation, and what happens at your ceremony.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section" id="contact">
+  <div class="container">
+    <div class="cta-block reveal">
+      <h2>Tell us about your matter.</h2>
+      <p>Every engagement begins with a private consultation. We respond within one business day.</p>
+      <div class="ctas">
+        <a href="#intake" class="btn btn-primary btn-big">Book a consultation
+          <svg class="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+        <a href="tel:+16478730837" class="btn btn-secondary btn-big">Call +1 647-873-0837</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section" id="faq">
+  <div class="container faq-grid">
+    <div class="faq-aside reveal">
+      <span class="section-eyebrow">Frequently asked</span>
+      <h2>Refugee and immigration questions, answered plainly.</h2>
+      <p>Can't find what you're looking for? Reach out — we respond within one business day.</p>
+      <div class="contact-card">
+        <div class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+        <div>
+          <div class="label">Office</div>
+          <div class="val">+1 647-873-0837</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-list reveal">
+      <details class="faq-item" open>
+        <summary>How long does a refugee claim take in Canada?
+          <span class="plus"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </summary>
+        <div class="faq-answer">Most claims take 12 to 24 months to reach a decision, though timelines vary by case. We track every stage and make sure your deadlines are met.</div>
+      </details>
+      <details class="faq-item">
+        <summary>What if my claim is refused?
+          <span class="plus"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </summary>
+        <div class="faq-answer">A refusal is not the end. You may appeal to the Refugee Appeal Division or seek judicial review at the Federal Court. We represent clients at both stages.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Can I work or study while my claim is processed?
+          <span class="plus"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </summary>
+        <div class="faq-answer">Yes. Most refugee claimants can apply for a work permit or study permit after their claim is referred to the IRB.</div>
+      </details>
+      <details class="faq-item">
+        <summary>How do I start a refugee claim in Canada?
+          <span class="plus"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </summary>
+        <div class="faq-answer">A claim can be made at a Canadian port of entry or from inside Canada through an online application. We assist with form preparation, evidence gathering, and representation before the Immigration and Refugee Board.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Who qualifies as a Convention Refugee?
+          <span class="plus"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </summary>
+        <div class="faq-answer">A Convention Refugee fears persecution based on race, religion, nationality, political opinion, or membership in a particular social group. A person in need of protection faces torture, risk to life, or cruel treatment if returned home.</div>
+      </details>
+      <details class="faq-item">
+        <summary>What’s the difference between a refugee claim and an H&amp;C application?
+          <span class="plus"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </summary>
+        <div class="faq-answer">A refugee claim is based on fear of persecution. A humanitarian &amp; compassionate (H&amp;C) application is for people who don't qualify as refugees but have strong personal, family, or community ties in Canada.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="brand">
+          <span style="width:42px;height:42px;border-radius:11px;background:#fff;display:grid;place-items:center;flex-shrink:0;"><img src="assets/pokharel-logo.png" alt="Pokharel Law" style="width:34px;height:34px;object-fit:contain;" /></span>
+          <span style="color:white;">Pokharel Law</span>
+        </a>
+        <p>Toronto-based immigration, refugee, family, and civil lawyers serving clients across Ontario and Canada. Licensed by the Law Society of Ontario.</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Practice</h5>
+        <ul>
+          <li><a href="#areas">Refugee Law</a></li>
+          <li><a href="#areas">Immigration Law</a></li>
+          <li><a href="#areas">Civil Litigation</a></li>
+          <li><a href="#areas">Family Law</a></li>
+          <li><a href="#areas">Notary Public</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Firm</h5>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#how">How it works</a></li>
+          <li><a href="#areas">Practice areas</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Offices</h5>
+        <ul>
+          <li><a href="https://maps.google.com/?q=7+Duke+St+W,+Toronto,+ON">Toronto — 7 Duke St W</a></li>
+          <li><a href="https://maps.google.com/?q=421+7+Ave+SW,+Calgary,+AB+T2P+4K9">Calgary — 421 7 Ave SW</a></li>
+          <li><a href="#contact">Book a consultation</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="tel:+16478730837">+1 647-873-0837 (office)</a></li>
+          <li><a href="tel:+14168417970">+1 416-841-7970 (mobile)</a></li>
+          <li><a href="mailto:rajendra@pokharel.ca">rajendra@pokharel.ca</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2026 Pokharel Law. Licensed in Ontario, Canada · Law Society of Ontario. Information here is general reference, not legal advice — every case is unique.</div>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING -->
+<button class="floating-consult" onclick="document.getElementById('intake').scrollIntoView({behavior:'smooth'})">
+  <span class="pulse"></span>
+  <span class="label">Book a consultation</span>
+  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+</button>
+
+<script src="image-slot.js"></script>
+<script>
+  // Nav scroll
+  const nav = document.getElementById('nav');
+  const onScroll = () => {
+    if (window.scrollY > 8) nav.classList.add('scrolled');
+    else nav.classList.remove('scrolled');
+  };
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  // Quiz interactivity
+  document.querySelectorAll('.quiz-option').forEach(o => {
+    o.addEventListener('click', () => {
+      document.querySelectorAll('.quiz-option').forEach(x => x.classList.remove('selected'));
+      o.classList.add('selected');
+    });
+  });
+
+  // Reveal on scroll
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('in');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>
